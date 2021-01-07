@@ -1,0 +1,7 @@
+1, Rodrigo, Aguirre, Uruguayo, 31
+2, Adrian, Gabarinni, Argentino, 30
+3, Johan, Julio, Ecuatoriano, 22
+4, Jonathan, Alvez, Uruguayo, 28
+5, Damian, Diaz, Argentino, 32
+6, Mario, Pineida, Ecuatoriano, 33
+7, Lionel, Messi, Argentino, 32

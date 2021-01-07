@@ -1,0 +1,5 @@
+1, Liga, Quito, 11, 1
+2, Liga, Quito, 11, 2
+3, Liga, Quito, 11, 3
+4, Barcelona, Guayaquil, 16, 4
+5, Barcelona, Guayaquil, 16, 5

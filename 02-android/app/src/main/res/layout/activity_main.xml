@@ -12,19 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ciclo Vida"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="101dp" />
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="35dp" />
 
     <Button
         android:id="@+id/btn_ir_list_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:text="List View"
-        app:layout_constraintEnd_toEndOf="@+id/btn_ir_ciclo_vida"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_ir_ciclo_vida"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ir_ciclo_vida" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ir_ciclo_vida"
+        tools:layout_editor_absoluteX="240dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -32,17 +30,47 @@
         android:layout_height="wrap_content"
         android:background="@color/rojo"
         android:text="@string/saludo"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="478dp" />
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="165dp" />
 
     <Button
         android:id="@+id/btn_ir_intent_explicito_parametros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="168dp"
         android:text="Param  Intent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ir_ciclo_vida"
+        tools:layout_editor_absoluteX="225dp" />
+
+    <Button
+        android:id="@+id/btn_ir_intent_con_respuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="I. Respuesta"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ir_ciclo_vida"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_ir_ciclo_vida"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ir_ciclo_vida" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ir_intent_explicito_parametros" />
+
+    <Button
+        android:id="@+id/btn_ir_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R. VIEW"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ir_ciclo_vida"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="@+id/btn_ir_ciclo_vida"
+        tools:layout_editor_absoluteY="481dp" />
+
+    <Button
+        android:id="@+id/btn_ir_http"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HTTP"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ir_ciclo_vida"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_ir_ciclo_vida"
+        tools:layout_editor_absoluteY="628dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
