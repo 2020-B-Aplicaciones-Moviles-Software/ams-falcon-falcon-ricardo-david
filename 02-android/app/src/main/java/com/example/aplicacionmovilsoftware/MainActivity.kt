@@ -6,13 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //BBaseDeDatos.inicializarArreglo()
-        BBaseDeDatos.inicializarEntrenadores()
+        BBaseDeDatos.inicializarArreglo()
+       // BBaseDeDatos.inicializarEntrenadores()
 
         val botonCicloVida = findViewById<Button>(R.id.btn_ir_ciclo_vida)
         botonCicloVida
@@ -25,20 +28,101 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 irAActividad(BListView::class.java)
             }
-        val botonIrCIntentExplicitoParametros = findViewById<Button>(R.id.btn_ir_intent_explicito_parametros)
-        botonIrCIntentExplicitoParametros
+        val botonIrIntentExplicitoParametros = findViewById<Button>(R.id.btn_ir_intent_explicito_parametros)
+        botonIrIntentExplicitoParametros
             .setOnClickListener{
-                val parametros = arrayListOf<Pair<String,*>>(
-                    Pair("nombre","Ricardo"),
-                    Pair("apellido","Falcon"),
-                    Pair("edad",23)
+                val intentExplcito = Intent(
+                        this,
+                        CIntentExplicitoParametros::class.java
                 )
-                irAActividad(CIntentExplicitoParametros::class.java, parametros,102)
+                intentExplcito.putExtra("nombre","Ricardo")
+                intentExplcito.putExtra("apellido","Falcon")
+                intentExplcito.putExtra("edad",23)
+
+                val ligaPokemon = DLiga("Liga kanto","Kanto")
+                val ash= BEntrenador("Ash","Pueblo Paleta", ligaPokemon)
+                intentExplcito.putExtra("entrenador",ash)
+                startActivityForResult(intentExplcito, 102)
+
+                // val parametros = arrayListOf<Pair<String,*>>(
+                 //   Pair("nombre","Ricardo"),
+                   // Pair("apellido","Falcon"),
+                    //Pair("edad",23)
+                //)
+                //irAActividad(CIntentExplicitoParametros::class.java, parametros,102)
             }
 
+        EBaseDeDatos.TablaUsuario = ESqliteHelperUsuario(this)
+        if(EBaseDeDatos.TablaUsuario != null){
+            val usuarioEncontrado = EBaseDeDatos.TablaUsuario?.consultarUsuarioPorId(1)
+            Log.i(
+                    "bdd","ID:${usuarioEncontrado?.id} Nombre:${usuarioEncontrado?.nombre}" +
+                    "Descripcion:${usuarioEncontrado?.descripcion}"
+            )
+
+             if (usuarioEncontrado?.id == 0){
+                val resultadoCrear = EBaseDeDatos.TablaUsuario
+                        ?.crearUsuarioFormulario("Ricardo","Estudiante")
+                if(resultadoCrear != null){
+                    if(resultadoCrear){
+                        Log.i("bdd","se creo correctamente")
+                    }else{
+                        Log.i("bdd","hubo errores")
+                    }
+                }
+            } else{
+                val resultadoActualizar = EBaseDeDatos.TablaUsuario
+                        ?.actualizarUsuarioFormulario(
+                                "David",
+                        Date().time.toString(),
+                                1
+                        )
+                if(resultadoActualizar != null){
+                    if (resultadoActualizar){
+                        Log.i("bdd","Se actualizo")
+                    }else{
+                        Log.i("bdd","Errores")
+                    }
+                }
+            }
+        }
+        val botonIrIntentConRespuesta = findViewById<Button>(
+                R.id.btn_ir_intent_con_respuesta
+
+        )
+        botonIrIntentConRespuesta
+                .setOnClickListener{
+                    irAActividad(
+                            FIntentConRespuesta::class.java
+                    )
+                }
 
 
-    }
+        val botonIrRecyclerView = findViewById<Button>(
+            R.id.btn_ir_recycler_view
+
+        )
+        botonIrRecyclerView
+            .setOnClickListener{
+                irAActividad(
+                    GRecyclerView::class.java
+                )
+            }
+
+        val botonIrHttp = findViewById<Button>(
+            R.id.btn_ir_http
+        )
+        botonIrHttp
+            .setOnClickListener{
+                irAActividad(
+                    HHttpActivity::class.java
+                )
+            }
+
+    } // fin oncreate
+
+
+
 
     fun irAActividad(
         clase: Class<*>,

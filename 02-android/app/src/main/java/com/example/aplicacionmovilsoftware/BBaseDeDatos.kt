@@ -4,7 +4,7 @@ class BBaseDeDatos {
     companion object{
         val arregloEnteros = arrayListOf<Int>()
         val arregloEntrenadores = arrayListOf<BEntrenador>()
-        fun inicializarEntrenadores(){
+        /*fun inicializarEntrenadores(){
             arregloEntrenadores.add(BEntrenador("Alex","Abogado"))
             arregloEntrenadores.add(BEntrenador("Ana","Enferemera"))
             arregloEntrenadores.add(BEntrenador("Julio","Docente"))
@@ -13,7 +13,7 @@ class BBaseDeDatos {
             arregloEntrenadores.add(BEntrenador("Andrea","Ingeniera"))
 
 
-        }
+        }*/
         fun inicializarArreglo(){
             arregloEnteros.add(1)
             arregloEnteros.add(2)
