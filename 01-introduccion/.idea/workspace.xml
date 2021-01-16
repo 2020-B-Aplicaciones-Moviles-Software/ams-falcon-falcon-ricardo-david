@@ -20,30 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd2bbfcc-831c-4623-b8a8-dc8cc5b7966a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/FIntentConRespuesta.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/GRecyclerView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/HHttpActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/IPostHttp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-android/app/src/main/res/layout/activity_f_intent_con_respuesta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-android/app/src/main/res/layout/activity_g_recycler_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-android/app/src/main/res/layout/activity_h_http.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../deberCrud/deberCrud.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../deberCrud/src/Clases.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../deberCrud/src/ejecutable.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/data/TeamDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/data/TeamDataBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/fragments/add/AddFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/fragments/list/ListAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/fragments/list/ListFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/fragments/update/UpdateFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/model/Player.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/model/Team.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/relations/TeamWhitPlayer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/repository/TeamRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/java/com/example/examen_equipo_jugador_crud/viewmodel/TeamViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/drawable/ic_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/drawable/ic_baseline_delete_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/layout/custom_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/layout/fragment_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/layout/fragment_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/layout/fragment_update.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/menu/delete_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen_Equipo_Jugador_CRUD/app/src/main/res/navigation/my_nav.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/01-introduccion/META-INF/01-introduccion.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/01-introduccion/META-INF/01-introduccion.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/01-introduccion/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/01-introduccion/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/01-introduccion/Numeros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/01-introduccion/Numeros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/01-introduccion/NumerosJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/01-introduccion/NumerosJava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/01-introduccion/Suma.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/01-introduccion/Suma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/BBaseDeDatos.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/BBaseDeDatos.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/BEntrenador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/BEntrenador.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/BListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/BListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/CIntentExplicitoParametros.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/CIntentExplicitoParametros.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/HHttpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/aplicacionmovilsoftware/HHttpActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Kotlin.EjecutableKt">
     <configuration name="EjecutableKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -160,22 +159,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="533" y="186" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610052471173" />
-    <state width="1493" height="383" key="GridCell.Tab.0.bottom" timestamp="1610052713584">
+    <state width="1493" height="383" key="GridCell.Tab.0.bottom" timestamp="1610052968337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="383" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610052713584" />
-    <state width="1493" height="383" key="GridCell.Tab.0.center" timestamp="1610052713584">
+    <state width="1493" height="383" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610052968337" />
+    <state width="1493" height="383" key="GridCell.Tab.0.center" timestamp="1610052968337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="383" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610052713584" />
-    <state width="1493" height="383" key="GridCell.Tab.0.left" timestamp="1610052713584">
+    <state width="1493" height="383" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610052968337" />
+    <state width="1493" height="383" key="GridCell.Tab.0.left" timestamp="1610052968337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="383" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610052713584" />
-    <state width="1493" height="383" key="GridCell.Tab.0.right" timestamp="1610052713584">
+    <state width="1493" height="383" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610052968337" />
+    <state width="1493" height="383" key="GridCell.Tab.0.right" timestamp="1610052968337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="383" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610052713584" />
+    <state width="1493" height="383" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610052968337" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1610052545954">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -184,10 +183,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="304" y="148" width="927" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1609907167632" />
-    <state x="193" y="65" key="new project wizard" timestamp="1610052502161">
+    <state x="193" y="65" key="new project wizard" timestamp="1610418571288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="193" y="65" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1610052502161" />
+    <state x="193" y="65" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1610418571288" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

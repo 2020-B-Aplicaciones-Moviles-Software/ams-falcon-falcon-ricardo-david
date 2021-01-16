@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.beust.klaxon.Klaxon
+import com.github.kittinunf.fuel.httpDelete
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.fuel.httpPost
 import com.github.kittinunf.fuel.httpPut
@@ -13,11 +14,14 @@ class HHttpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_h_http)
-        //metodoGet()
-        metodoPost()
+       //metodoGet()
+        //metodoPost()
+      //  metodoUpdate(1)
+      // metodoBuscarById(1)
+        metodoDelete(1)
     }
     fun metodoGet(){
-        "https://jsonplaceholder.typicode.com/posts/1"
+        "https://jsonplaceholder.typicode.com/posts"
             .httpGet()
             .responseString{req, res, result ->
                 when (result){
@@ -30,7 +34,6 @@ class HHttpActivity : AppCompatActivity() {
                         Log.i("http-klaxon","${postString}")
                         val arregloPost = Klaxon()
                             .parseArray<IPostHttp>(postString)
-
                         if (arregloPost != null){
                             arregloPost
                                 .forEach{
@@ -71,8 +74,8 @@ class HHttpActivity : AppCompatActivity() {
 
     fun metodoUpdate(id: Int){
         val parametros: List<Pair<String, String>> = listOf(
-        "title" to "Titulo moviles version actualizada",
-        "body" to "descripcion moviles version actualizada",
+        "title" to "Titulo moviles con version actualizada",
+        "body" to "descripcion moviles con version actualizada",
         "userId" to "1"
         )
         "https://jsonplaceholder.typicode.com/posts/${id}"
@@ -93,6 +96,51 @@ class HHttpActivity : AppCompatActivity() {
                     }
 
                 }
+    }
+
+    fun metodoDelete(id: Int){
+        "https://jsonplaceholder.typicode.com/posts/${id}"
+                .httpDelete()
+                .responseString{req,res, result ->
+                    when(result){
+                        is Result.Failure ->{
+                            val error = result.getException()
+                            Log.i("http-klaxon", "Error ${error}")
+
+                        }
+                        is Result.Success ->{
+                            val postString = result.get()
+                            Log.i("http-klaxon", "Recurso con id ${id} eliminado: ${postString}")
+                        }
+                    }
+
+                }
+    }
+
+    fun metodoBuscarById(userId :Int){
+        "https://jsonplaceholder.typicode.com/posts?userId=${userId}"
+                .httpGet()
+                .responseString{req, res, result ->
+                    when(result){
+                        is Result.Failure ->{
+                            val error = result.getException()
+                            Log.i("http-klaxon", "Error ${error}")
+                        }
+                        is Result.Success -> {
+                            val postString = result.get()
+                            Log.i("http-klaxon","${postString}")
+                            val arregloPost = Klaxon()
+                                    .parseArray<IPostHttp>(postString)
+                            if (arregloPost != null){
+                                arregloPost.forEach{
+                                    Log.i("http-klaxon","Titulo del recurso con id ${it.id}: ${it.title}")
+                                }
+                            }
+                        }
+                    }
+
+                }
+
     }
 
 }

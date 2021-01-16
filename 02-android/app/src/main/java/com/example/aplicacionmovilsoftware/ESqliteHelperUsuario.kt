@@ -40,7 +40,6 @@ class ESqliteHelperUsuario(
                            scriptConsultarUsuario,
                            null
                    )
-
            val existeUsuario = resultadoConsulta.moveToFirst()
            val usuarioEncontrado = EUsuarioBDD(0,"","")
            if (existeUsuario){
@@ -53,7 +52,6 @@ class ESqliteHelperUsuario(
                        usuarioEncontrado.nombre = nombre
                        usuarioEncontrado.descripcion= descripcion
                    }
-
                }while (resultadoConsulta.moveToNext())
            }
            resultadoConsulta.close()
