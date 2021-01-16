@@ -3,10 +3,12 @@ import javax.swing.text.StyledEditorKit
 fun main (){
     println("Hola mundo")
 
-    // declarar varibles
-    // var edadProfesor: Int =31
+
+
+     //declarar varibles
+    var edadProfesor: Int =31
     var edadProfesor =31
-   // var sueldoProfesor: Double =12.34
+   var sueldoProfesor: Double =12.34
     var suelodProfesor =12.34
 
     // tipos de variables: mutables/inmutables
@@ -14,10 +16,10 @@ fun main (){
 
 
 
-    //var edadCachorro: Int = 0
-    //var edadCachorro = 1
-    //var edadCachorro = 2
-    //var edadCachorro = 3
+    var edadCachorro: Int = 0
+    var edadCachorro = 1
+    var edadCachorro = 2
+    var edadCachorro = 3
     //INMUTABLES
     //no pueden ser reasignadas
     val numeroCedula = 18128128128
@@ -29,17 +31,17 @@ fun main (){
     val nombreProfesor: String = "RicardoFalcon"
     val dueldo: Double = 12.2
     val estadoCivil: Char = 'S'
-    // val fechaNacimiento: Date = Date()
+     val fechaNacimiento: Date = Date()
 
     // Condicionales
     //if
     if(true){
-        //verdadera
+        verdadera
     }else{
-        //falso
+        falso
     }
-    //when
-    /*when(sueldo){
+    when
+    when(sueldo){
         12.2 ->{//inicio Bloque
             println("sueldo normal")
         } // fin bloque
@@ -48,10 +50,10 @@ fun main (){
         5.2 -> println("Sueldo negativo")
         else -> println("sueldo no reconocido")
 
-    }*/
+    }
 
-    //val sueldoMayorAEstablecido: Int = if (sueldo > 12.2) 500 else 0
-    //condicion ? bloque-true : bloque-false
+    val sueldoMayorAEstablecido: Int = if (sueldo > 12.2) 500 else 0
+    condicion ? bloque-true : bloque-false
 
     imprimirNombre(nombre = "Ricardo")
     //calcularSueldo(1000.00)

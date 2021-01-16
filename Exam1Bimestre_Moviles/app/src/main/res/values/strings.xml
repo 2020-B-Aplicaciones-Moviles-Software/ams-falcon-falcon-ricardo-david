@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Plantilla de jugadores</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_add_recipes">Ingresar Jugador</string>
+    <string name="recipes_details">Detalles del Jugador</string>
+    <string name="recipes_category_items">Recipes Categories</string>
+    <string name="recipes">Recipes</string>
+    <string name="add_recipes">Ingresar Jugadores</string>
+
+    <string name="lbl_recipes_name">Nombres del Jugador</string>
+    <string name="colon">:</string>
+    <string name="lbl_recipes_link">Nacionalidad del Jugador</string>
+    <string name="lbl_recipes_desc">Edad del Jugador</string>
+
+    <string name="fld_error_recipe_name">Por favor ingrese los nombres del jugador</string>
+    <string name="fld_error_recipes_link">Por favor ingrese la nacionalidad del jugador</string>
+
+    <string name="recipes_play_url">Nacionalidad del jugador</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_update">Update</string>
+    <string name="done">Aceptar</string>
+
+    <string name="error_add_recipes">Recipes link already exists.</string>
+    <string name="error_message_get_recipes_failed">Get recipes failed :</string>
+    <string name="error_message_up_to_date">Recipes details up to date.</string>
+    <string name="add_recipes_success_message">Jugador ingresado correctamente</string>
+    <string name="error_message_delete_failed">Delete recipe failed.</string>
+    <string name="action_delete_all">Borrar Todo</string>
+    <string name="message_confirm_delete">Quieres borrar todos los jugadores?</string>
+    <string name="cancel">Canelar</string>
+    <string name="yes">Si</string>
+    <string name="error_no_recipes_to_delete">No recipes to delete</string>
+    <string name="action_recipes_all">Todos los jugadores</string>
+    <string name="app_home">Examen I Bimestre</string>
+    <string name="action_add_categories">Ingresar Equipo</string>
+    <string name="error_message_empty_name">Category name empty</string>
+    <string name="hint_category_name">Nuevo nombre del equipo</string>
+    <string name="category">Equipo</string>
+    <string name="action_delete_categories">Borrar Equipo</string>
+    <string name="message_confirm_delete_category">Estas seguro que desas borrar el equipo : </string>
+    <string name="ok">Ok</string>
+    <string name="label_remove_category">Eliminar Equio : </string>
+    <string name="title_new_category">Ingresar Equipo</string>
+    <string name="title_update_category">Actualizar Equipo</string>
+    <string name="error_message_same_name">Category name is same as old.</string>
+
+</resources>
