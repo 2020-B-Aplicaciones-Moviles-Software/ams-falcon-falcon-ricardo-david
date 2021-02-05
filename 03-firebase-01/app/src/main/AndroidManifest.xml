@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firebase">
-        <activity android:name=".BFirestore"></activity>
+        <activity android:name=".COrdenes"></activity>
+        <activity android:name=".CRestaurante" />
+        <activity android:name=".CProducto" />
+        <activity android:name=".BFirestore" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
